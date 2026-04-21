@@ -6,8 +6,7 @@ $ablakcim = array(
 $fejlec = array(
     'kepforras' => 'logo.png',
     'kepalt' => 'logo',
-	'cim' => 'Mini honlap',
-	'motto' => ''
+	'cim' => 'Mini honlap'
 );
 
 $lablec = array(

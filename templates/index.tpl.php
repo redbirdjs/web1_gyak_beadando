@@ -10,34 +10,31 @@
 </head>
 <body>
 	<header>
-		<img src="./images/<?=$fejlec['kepforras']?>" alt="<?=$fejlec['kepalt']?>">
-		<h1><?= $fejlec['cim'] ?></h1>
-		<?php if (isset($fejlec['motto'])) { ?><h2><?= $fejlec['motto'] ?></h2><?php } ?>
+		<div class="title">
+			<img src="./images/<?=$fejlec['kepforras']?>" alt="<?=$fejlec['kepalt']?>">
+			<h1><?= $fejlec['cim'] ?></h1>
+		</div>
 		<?php if(isset($_SESSION['login'])) { ?>Bejlentkezve: <strong><?= $_SESSION['csn']." ".$_SESSION['un']." (".$_SESSION['login'].")" ?></strong><?php } ?>
+
+		<nav>
+			<?php foreach ($oldalak as $url => $oldal) { ?>
+				<?php if(! isset($_SESSION['login']) && $oldal['menun'][0] || isset($_SESSION['login']) && $oldal['menun'][1]) { ?>
+					<a href="<?= ($url == '/') ? '.' : $url ?>" class="<?= (($oldal == $keres) ? 'active' : '') ?>">
+						<?= $oldal['szoveg'] ?>
+					</a>
+				<?php } ?>
+			<?php } ?>
+		</nav>
 	</header>
-    <div id="wrapper">
-        <aside id="nav">
-            <nav>
-                <ul>
-					<?php foreach ($oldalak as $url => $oldal) { ?>
-						<?php if(! isset($_SESSION['login']) && $oldal['menun'][0] || isset($_SESSION['login']) && $oldal['menun'][1]) { ?>
-							<li<?= (($oldal == $keres) ? ' class="active"' : '') ?>>
-							<a href="<?= ($url == '/') ? '.' : $url ?>">
-							<?= $oldal['szoveg'] ?></a>
-							</li>
-						<?php } ?>
-					<?php } ?>
-                </ul>
-            </nav>
-        </aside>
-        <div id="content">
-            <?php include("./templates/pages/{$keres['fajl']}.tpl.php"); ?>
-        </div>
-    </div>
-    <footer>
-        <?php if(isset($lablec['copyright'])) { ?>&copy;&nbsp;<?= $lablec['copyright'] ?> <?php } ?>
+
+	<div id="content">
+		<?php include("./templates/pages/{$keres['fajl']}.tpl.php"); ?>
+	</div>
+	
+	<footer>
+		<?php if(isset($lablec['copyright'])) { ?>&copy;&nbsp;<?= $lablec['copyright'] ?> <?php } ?>
 		&nbsp;
-        <?php if(isset($lablec['ceg'])) { ?><?= $lablec['ceg']; ?><?php } ?>
-    </footer>
+		<?php if(isset($lablec['ceg'])) { ?><?= $lablec['ceg']; ?><?php } ?>
+	</footer>
 </body>
 </html>
