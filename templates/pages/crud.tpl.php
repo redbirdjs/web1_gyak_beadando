@@ -1,33 +1,66 @@
-<table>
-    <caption>5. gyakorlat 1. feladat:<br>TÁBLÁZAT</caption>
-    <tr>
-        <th>Employee</th>
-        <th>Salary</th>
-        <th>Bonus</th>
-        <th>Supervisor</th>
-    </tr>
-    <tr>
-        <td>Stephen C. Cox</td>
-        <td>$300</td>
-        <td>$50</td>
-        <td>Bob</td>
-    </tr>
-    <tr>
-        <td>Josephin Tan</td>
-        <td>$150</td>
-        <td>-</td>
-        <td>Annie</td>
-    </tr>
-    <tr>
-        <td>Joyce Ming</td>
-        <td>$200</td>
-        <td>$35</td>
-        <td>Andy</td>
-    </tr>
-    <tr>
-        <td>James A. Pentel</td>
-        <td>$175</td>
-        <td>$25</td>
-        <td>Annie</td>
-    </tr>
-</table>
+<main>
+  <div class="title">
+    <h2>Szoftverek CRUD</h2>
+    <button>Új adat</button>
+  </div>
+  
+  <div class="table-container">
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Név</th>
+          <th>Kategória</th>
+          <th>Műveletek</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Szoftver</td>
+          <td>Igen</td>
+          <td>
+            <button>Módosítás</button>
+            <button class="btn-red">Törlés</button>
+          </td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Szoftver</td>
+          <td>Igen</td>
+          <td>
+            <button>Módosítás</button>
+            <button class="btn-red">Törlés</button>
+          </td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Szoftver</td>
+          <td>Igen</td>
+          <td>
+            <button>Módosítás</button>
+            <button class="btn-red">Törlés</button>
+          </td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Szoftver</td>
+          <td>Igen</td>
+          <td>
+            <button>Módosítás</button>
+            <button class="btn-red">Törlés</button>
+          </td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Szoftver</td>
+          <td>Igen</td>
+          <td>
+            <button>Módosítás</button>
+            <button class="btn-red">Törlés</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</main>
