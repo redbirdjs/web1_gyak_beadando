@@ -3,6 +3,17 @@
   padding: 0;
 }
 
+:root {
+  --primary-color: #2480a8;
+  --primary-hover-color: #1d6fa5;
+
+  --success-color: #27ae60;
+  --success-hover-color: #1e944f;
+
+  --danger-color: #e74c3c;
+  --danger-hover-color: #c0392b;
+}
+
 body {
   font-family: Calibri, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
   
