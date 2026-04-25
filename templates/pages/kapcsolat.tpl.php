@@ -1,5 +1,5 @@
 <h2>Kapcsolat</h2>
-<form method="post" action="">
+<form method="post" action="/uzenetkuldes">
     <label for="uzenet">Üzenet</label>
     <textarea name="uzenet" id="uzenet" oninput="uzenetCheck()" placeholder="Üzenet az oldal tulajdonosának"></textarea>
     <p id="hiba-uzenet" class="hidden hiba-uzenet">A mező kitöltése kötelező!</p>
