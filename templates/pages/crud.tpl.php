@@ -1,7 +1,13 @@
+<?php
+require "includes/db.php";
+$stmt = $dbh->prepare("SELECT * FROM szoftver");
+$stmt->execute();
+$result = $stmt->fetchAll();
+?>
 <main>
   <div class="title">
     <h2>Szoftverek CRUD</h2>
-    <button>Új adat</button>
+    <a href="/crud-uj"><button>Új adat</button></a>
   </div>
   
   <div class="table-container">
@@ -15,51 +21,17 @@
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td>1</td>
-          <td>Szoftver</td>
-          <td>Igen</td>
-          <td>
-            <button>Módosítás</button>
-            <button class="btn-red">Törlés</button>
-          </td>
-        </tr>
-        <tr>
-          <td>1</td>
-          <td>Szoftver</td>
-          <td>Igen</td>
-          <td>
-            <button>Módosítás</button>
-            <button class="btn-red">Törlés</button>
-          </td>
-        </tr>
-        <tr>
-          <td>1</td>
-          <td>Szoftver</td>
-          <td>Igen</td>
-          <td>
-            <button>Módosítás</button>
-            <button class="btn-red">Törlés</button>
-          </td>
-        </tr>
-        <tr>
-          <td>1</td>
-          <td>Szoftver</td>
-          <td>Igen</td>
-          <td>
-            <button>Módosítás</button>
-            <button class="btn-red">Törlés</button>
-          </td>
-        </tr>
-        <tr>
-          <td>1</td>
-          <td>Szoftver</td>
-          <td>Igen</td>
-          <td>
-            <button>Módosítás</button>
-            <button class="btn-red">Törlés</button>
-          </td>
-        </tr>
+        <?php foreach ($result as $row) { ?>
+          <tr>
+            <td><?= $row["id"] ?></td>
+            <td><?= $row["nev"] ?></td>
+            <td><?= $row["kategoria"] ?></td>
+            <td>
+              <a href="<?= "/crud-modosit?id=" . $row["id"] ?>"><button>Módosítás</button></a>
+              <button class="btn-red">Törlés</button>
+            </td>
+          </tr>
+        <?php } ?>
       </tbody>
     </table>
   </div>
