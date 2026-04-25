@@ -28,7 +28,7 @@ $result = $stmt->fetchAll();
             <td><?= $row["kategoria"] ?></td>
             <td>
               <a href="<?= "/crud-modosit?id=" . $row["id"] ?>"><button>Módosítás</button></a>
-              <button class="btn-red">Törlés</button>
+              <a href="<?= "/crud-torol?id=" . $row["id"] ?>"><button class="btn-red">Törlés</button></a>
             </td>
           </tr>
         <?php } ?>
