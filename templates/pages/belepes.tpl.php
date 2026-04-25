@@ -1,5 +1,5 @@
 <main>
-  <form action = "belep" method = "post">
+  <form action="belep" method="post">
     <h2>Bejelentkezés</h2>
     
     <input type="text" name="felhasznalo" placeholder="Felhasználónév" required>
@@ -8,7 +8,7 @@
     <button type="submit">Bejelentkezés</button>
   </form>
 
-  <form action = "regisztral" method = "post">
+  <form action="regisztral" method="post">
     <h2>Regisztráció</h2>
 
     <input type="text" name="vezeteknev" placeholder="Vezetéknév" required>
