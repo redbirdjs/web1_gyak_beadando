@@ -9,6 +9,7 @@ if (file_exists('./logicals/'.$keres['fajl'].'.php')) {
 <html>
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title><?= $ablakcim['cim'] . ( (isset($ablakcim['mottó'])) ? ('|' . $ablakcim['mottó']) : '' ) ?></title>
 	<link rel="stylesheet" href="./styles/stilus.css" type="text/css">
 	<?php if (file_exists('./styles/'.$keres['fajl'].'.css')) { ?>
