@@ -10,11 +10,12 @@
     }
 ?>
 <main>
+    <h2>Üzenetek</h2>
+
     <?php foreach ($uzenetek as $uzenet): ?>
-        <div>
+        <div class="message">
             <p><?= $uzenet['uzenet'] ?></p>
-            <p><?= $uzenet['kuldo'] ?></p>
-            <p><?= $uzenet['datum'] ?></p>
+            <p><?= $uzenet['kuldo'] ?> <span>•</span> <?= $uzenet['datum'] ?></p>
         </div>
     <?php endforeach; ?>
 </main>
