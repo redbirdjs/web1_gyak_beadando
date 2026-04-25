@@ -1,15 +1,13 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Regisztráció</title>
-        <meta charset="utf-8">
-    </head>
-    <body>
-        <?php if(isset($uzenet)) { ?>
-            <h1><?= $uzenet ?></h1>
-            <?php if($ujra) { ?>
-                <a href="belepes">Próbálja újra!</a>
-            <?php } ?>
-        <?php } ?>
-    </body>  
-</html>
+<main>
+  <h2><?= $ujra ? "Sikertelen regisztráció!" : "Sikeres regisztráció!" ?></h2>
+  <?php if(isset($uzenet)) { ?>
+    <p><?= $uzenet ?></p>
+  <?php } ?>
+
+  <div>
+    <a href="/"><button>Főoldal</button></a>
+    <?php if($ujra) { ?>
+      <a href="/belepes"><button>Vissza a regisztrációhoz</button></a>
+    <?php } ?>
+  </div>
+</main>
