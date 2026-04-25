@@ -1,23 +1,5 @@
-<?php
-require "includes/db.php";
-
-if (!isset($_GET["id"]) || !is_numeric($_GET["id"])) {
-  echo "<script>window.location = '/crud'</script>";
-  return;
-}
-
-$stmt = $dbh->prepare("SELECT * FROM szoftver WHERE id = ?");
-$stmt->execute([ $_GET["id"] ]);
-
-if ($stmt->rowCount() == 0) {
-  echo "<script>window.location = '/crud'</script>";
-  return;
-}
-
-$row = $stmt->fetch();
-?>
 <main>
-  <form action="/logicals/modosit-szoftver" method="post">
+  <form action="/crud-modosit" method="post">
     <h2>Szoftver módosítás</h2>
     
     <input type="number" name="id" id="id" value="<?= $row["id"] ?>" readonly hidden>
