@@ -1,2 +1,2 @@
-<h1>Kilépett:</h1>
+<h1>Sikeres kilépés!</h1>
 <?= $data['csn']." ".$data['un']." (".$data['login'].")" ?>
