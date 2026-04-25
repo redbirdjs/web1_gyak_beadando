@@ -2,7 +2,7 @@
     require "includes/db.php";
 
     try {
-        $stmt = $dbh->prepare("SELECT * FROM uzenetek");
+        $stmt = $dbh->prepare("SELECT * FROM uzenetek ORDER BY datum DESC");
         $stmt->execute();
         $uzenetek = $stmt->fetchAll();
     } catch (PDOException $e) {
