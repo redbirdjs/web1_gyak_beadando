@@ -20,6 +20,8 @@ $oldalak = array(
 	'kapcsolat' => array('fajl' => 'kapcsolat', 'szoveg' => 'Kapcsolat', 'menun' => array(1,1)),
 	'uzenetek' => array('fajl' => 'uzenetek', 'szoveg' => 'Üzenetek', 'menun' => array(0,1)),
     'crud' => array('fajl' => 'crud', 'szoveg' => 'CRUD', 'menun' => array(1,1)),
+    'crud-uj' => array('fajl' => 'crud-uj', 'szoveg' => 'CRUD', 'menun' => array(0,0)),
+    'crud-modosit' => array('fajl' => 'crud-modosit', 'szoveg' => 'CRUD', 'menun' => array(0,0)),
     'belepes' => array('fajl' => 'belepes', 'szoveg' => 'Belépés', 'menun' => array(1,0)),
     'kilepes' => array('fajl' => 'kilepes', 'szoveg' => 'Kilépés', 'menun' => array(0,1)),
     'belep' => array('fajl' => 'belep', 'szoveg' => '', 'menun' => array(0,0)),
