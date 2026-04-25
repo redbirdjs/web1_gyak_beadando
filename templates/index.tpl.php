@@ -22,7 +22,7 @@ if (file_exists('./logicals/'.$keres['fajl'].'.php')) {
 			<h1><?= $fejlec['cim'] ?></h1>
 		</div>
 
-		<nav>
+		<nav class="nav">
 			<?php foreach ($oldalak as $url => $oldal) { ?>
 				<?php if (! isset($_SESSION['login']) && $oldal['menun'][0] || isset($_SESSION['login']) && $oldal['menun'][1]) { ?>
 					<a href="<?= ($url == '/') ? '.' : $url ?>" class="<?= (($oldal == $keres) ? 'active' : '') ?>">
@@ -37,6 +37,22 @@ if (file_exists('./logicals/'.$keres['fajl'].'.php')) {
 				</div>
 			<?php } ?>
 		</nav>
+
+		<div class="hamburger">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+
+		<nav class="hamburger-menu open">
+			<?php foreach ($oldalak as $url => $oldal) { ?>
+				<?php if (! isset($_SESSION['login']) && $oldal['menun'][0] || isset($_SESSION['login']) && $oldal['menun'][1]) { ?>
+					<a href="<?= ($url == '/') ? '.' : $url ?>" class="<?= (($oldal == $keres) ? 'active' : '') ?>">
+						<?= $oldal['szoveg'] ?>
+					</a>
+				<?php } ?>
+			<?php } ?>
+		</nav>
 	</header>
 
 	<div id="content">
@@ -48,5 +64,28 @@ if (file_exists('./logicals/'.$keres['fajl'].'.php')) {
 		&nbsp;
 		<?php if (isset($lablec['ceg'])) { ?><?= $lablec['ceg']; ?><?php } ?>
 	</footer>
+
+	<script>
+		const burger = document.querySelector(".hamburger");
+		const burgerMenu = document.querySelector(".hamburger-menu");
+
+		burgerMenu.style.setProperty("--h", `${burgerMenu.clientHeight}px`);
+		burger.classList.remove("open");
+		burgerMenu.classList.remove("open");
+
+		burger.addEventListener("click", () => {
+			if (burger.classList.contains("open")) {
+				burger.classList.remove("open");
+				burgerMenu.classList.remove("open");
+			} else {
+				burger.classList.add("open");
+				burgerMenu.classList.add("open");
+			}
+		});
+
+		document.addEventListener("DOMContentLoaded", () => {
+			burgerMenu.style.transition = "0.25s";
+		});
+	</script>
 </body>
 </html>

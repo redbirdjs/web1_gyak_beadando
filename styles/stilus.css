@@ -26,6 +26,7 @@ body {
 }
 
 header {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -72,6 +73,104 @@ header nav a.active {
 header nav div {
   margin-left: 16px;
   color: #bbb;
+}
+
+header .hamburger {
+  display: flex;
+  position: relative;
+  height: 30px;
+  aspect-ratio: 1;
+  overflow: hidden;
+}
+
+header .hamburger span {
+  position: absolute;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background: #fff;
+  transition: 0.25s;
+}
+
+header .hamburger span:nth-child(1) {
+  top: 0;
+}
+
+header .hamburger.open span:nth-child(1) {
+  scale: 1.25;
+  top: calc(50% - 1px);
+  transform: rotate(45deg);
+}
+
+header .hamburger span:nth-child(2) {
+  top: calc(50% - 1px);
+}
+
+header .hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+
+header .hamburger span:nth-child(3) {
+  bottom: 0;
+}
+
+header .hamburger.open span:nth-child(3) {
+  scale: 1.25;
+  bottom: calc(50% - 1px);
+  transform: rotate(-45deg);
+}
+
+header .hamburger-menu {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 100%;
+  left: 0;
+  right: 0;
+  height: 0;
+  padding: 0;
+  opacity: 0;
+  overflow: hidden;
+  border-top: 1px solid #444;
+  background: #222;
+}
+
+header .hamburger-menu.open {
+  height: calc(var(--h) - 40px);
+  padding: 20px;
+  opacity: 1;
+}
+
+@media (min-width: 800px) {
+  .nav a {
+    display: flex;
+  }
+
+  .hamburger, .hamburger-menu {
+    display: none !important;
+  }
+}
+
+@media (max-width: 799px) {
+  .nav {
+    margin-left: auto;
+    margin-right: 20px;
+  }
+
+  .nav a {
+    display: none !important;
+  }
+
+  .hamburger, .hamburger-menu {
+    display: flex;
+  }
+}
+
+@media (max-width: 499px) {
+  .nav {
+    display: none !important;
+  }
 }
 
 div#content {
