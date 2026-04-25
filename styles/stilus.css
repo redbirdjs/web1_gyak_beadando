@@ -121,6 +121,7 @@ header .hamburger.open span:nth-child(3) {
 }
 
 header .hamburger-menu {
+  z-index: 1000;
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -147,8 +148,12 @@ header .hamburger-menu.open {
     display: flex;
   }
 
-  .hamburger, .hamburger-menu {
+  .hamburger {
     display: none !important;
+  }
+
+  .hamburger-menu {
+    visibility: hidden;
   }
 }
 
@@ -162,8 +167,12 @@ header .hamburger-menu.open {
     display: none !important;
   }
 
-  .hamburger, .hamburger-menu {
+  .hamburger {
     display: flex;
+  }
+
+  .hamburger-menu {
+    visibility: visible;
   }
 }
 
