@@ -22,6 +22,7 @@ $oldalak = array(
     'crud' => array('fajl' => 'crud', 'szoveg' => 'CRUD', 'menun' => array(1,1)),
     'crud-uj' => array('fajl' => 'crud-uj', 'szoveg' => 'CRUD', 'menun' => array(0,0)),
     'crud-modosit' => array('fajl' => 'crud-modosit', 'szoveg' => 'CRUD', 'menun' => array(0,0)),
+    'crud-torol' => array('fajl' => 'crud-torol', 'szoveg' => 'CRUD', 'menun' => array(0,0)),
     'belepes' => array('fajl' => 'belepes', 'szoveg' => 'Belépés', 'menun' => array(1,0)),
     'kilepes' => array('fajl' => 'kilepes', 'szoveg' => 'Kilépés', 'menun' => array(0,1)),
     'belep' => array('fajl' => 'belep', 'szoveg' => '', 'menun' => array(0,0)),
