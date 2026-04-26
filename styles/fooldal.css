@@ -70,6 +70,12 @@ button:hover {
   background: var(--primary-hover-color);
 }
 
+main .content-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
 main .content .iframe {
   width: 50%;
   height: max-content;

@@ -32,7 +32,7 @@
       <p><b>Miért érdemes telepíteni?</b></p>
       <p>A Visual Studio Code gyors és könnyen kezelhető, így ideális választás kezdők számára is, ugyanakkor haladó fejlesztők igényeit is kielégíti. Beépített hibakeresési eszközöket kínál, és a rengeteg elérhető bővítménynek köszönhetően szinte bármilyen fejlesztési feladathoz igazítható.</p>
 
-      <div>
+      <div class="content-buttons">
         <a href="https://code.visualstudio.com/" target="_blank"><button>Visual Studio Code</button></a>
         <a href="https://www.youtube.com/watch?v=cu_ykIfBprI" target="_blank"><button>Videó megtekintése a YouTube-on</button></a>
       </div>
@@ -60,7 +60,7 @@
       <p>Megjegyzést az oldalhoz vagy tartalomhoz a Kapcsolat oldalon tud írni, ehhez nem szükséges személyes látogatás.</p>
       <p>Amennyiben nevet is szeretne csatolni az üzenethez, kérjük jelentkezzen be az oldalra. Ha még nem rendelkezik felhasználóval, a Belépés oldalon regisztrálni is tud.</p>
 
-      <div>
+      <div class="content-buttons">
         <a href="/kapcsolat"><button>Kapcsolat</button></a>
         <a href="/belepes"><button>Bejelentkezés és regisztráció</button></a>
       </div>
