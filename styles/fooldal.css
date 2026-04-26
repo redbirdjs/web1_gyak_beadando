@@ -31,19 +31,48 @@ main .content.frame-left {
 
 main .content .text-content {
   width: 50%;
+  text-align: justify;
 }
 
 main .text-content h3 {
-  font-size: 26px;
+  font-size: 28px;
   margin-bottom: 8px;
 }
 
 main .text-content p {
   font-size: 17px;
+  margin: 8px 0;
+}
+
+main .text-content p:last-child {
+  margin: 0;
+}
+
+main .text-content a {
+  color: #cccfff;
+}
+
+button {
+  font-size: 15px;
+  letter-spacing: 1px;
+  width: max-content;
+  padding: 8px 12px;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  color: #fff;
+  background: var(--primary-color);
+  cursor: pointer;
+  transition: 0.25s background;
+}
+
+button:hover {
+  background: var(--primary-hover-color);
 }
 
 main .content .iframe {
   width: 50%;
+  height: max-content;
   border-radius: 12px;
   overflow: hidden;
 }
