@@ -6,13 +6,19 @@
 
   <div class="content">
     <div class="text-content">
-      <h3>Videó saját könyvtárból</h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In perferendis ullam mollitia facilis accusantium sequi nobis aliquam eveniet voluptates. Excepturi quae accusantium esse, sed ea ex voluptas eum praesentium, culpa sit modi? Non earum temporibus illo minima provident quia dicta.</p>
+      <h3>Az oldalról</h3>
+
+      <p>Ez a weboldal szoftverekkel foglalkozik, és egy átlátható felületet biztosít az ezekhez kapcsolódó adatok megjelenítésére és kezelésére. A rendszer lehetőséget ad az adatok bővítésére, módosítására és törlésére, így a tartalom rugalmasan alakítható.</p>
+      <p>Az oldalon szoftverekhez kapcsolódó képek is megjelennek, valamint bejelentkezés után új tartalmak feltöltésére is van lehetőség. Emellett egy üzenetküldési funkció is elérhető, amelyen keresztül megjegyzések küldhetők az oldal tulajdonosának.</p>
+      <p>Az összes funkció elérése érdekében érdemes bejelentkezni az oldalra. Amennyiben még nincs felhasználója, regisztrálhat a Belépés oldalon.</p>
+      
+      <a href="/belepes"><button>Bejelentkezés és regisztráció</button></a>
     </div>
     <div class="iframe">
       <video id="vm-player" playsinline controls data-poster="/path/to/poster.jpg">
-        <source src="/path/to/video.mp4" type="video/mp4" />
+        <source src="/images/fooldal-video.mp4" type="video/mp4" />
       </video>
+      <!-- forrás: https://www.pexels.com/video/typing-of-codes-854053/ -->
     </div>
   </div>
 
