@@ -50,3 +50,7 @@ a {
     cursor: pointer;
     transition: 0.25s background;
 }
+
+.btn:hover {
+    background: var(--primary-hover-color);
+}
