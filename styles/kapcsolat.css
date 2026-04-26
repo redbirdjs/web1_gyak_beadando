@@ -33,7 +33,7 @@ textarea {
     max-width: 600px;
     min-height: 100px;
     resize: vertical;
-    background: #3f3f3f;
+    background: #333;
     color: #e0e0e0;
     font-size: 15px;
 }
