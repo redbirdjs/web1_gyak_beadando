@@ -9,7 +9,7 @@ $result = $stmt->fetchAll();
     <h2>Szoftverek CRUD</h2>
     <a href="/crud-uj"><button>Új adat</button></a>
   </div>
-  
+
   <div class="table-container">
     <table>
       <thead>
@@ -34,5 +34,35 @@ $result = $stmt->fetchAll();
         <?php } ?>
       </tbody>
     </table>
+  </div>
+
+  <div class="table-container-mobile">
+    <?php foreach ($result as $row) { ?>
+      <div class="table-data-mobile">
+        <table>
+          <tbody>
+            <tr>
+              <td>ID</td>
+              <td><?= $row["id"] ?></td>
+            </tr>
+            <tr>
+              <td>Név</td>
+              <td><?= $row["nev"] ?></td>
+            </tr>
+            <tr>
+              <td>Kategória</td>
+              <td><?= $row["kategoria"] ?></td>
+            </tr>        
+            <tr>
+              <td>Műveletek</td>
+              <td>
+                <a href="<?= "/crud-modosit?id=" . $row["id"] ?>"><button>Módosítás</button></a>
+                <a href="<?= "/crud-torol?id=" . $row["id"] ?>"><button class="btn-red">Törlés</button></a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    <?php } ?>
   </div>
 </main>

@@ -1,5 +1,6 @@
 main {
   width: max-content;
+  max-width: 100%;
   margin: 0 auto;
 }
 
@@ -40,10 +41,38 @@ button:hover {
 
 .table-container {
   width: max-content;
+  max-width: 100%;
   margin-top: 10px;
   border: 1px solid #666;
   border-radius: 8px;
   overflow: hidden;
+}
+
+.table-container-mobile {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: max-content;
+  max-width: 100%;
+  margin-top: 10px;
+}
+
+.table-data-mobile {
+  border: 1px solid #666;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.table-container-mobile table {
+  width: 100%;
+}
+
+.table-container-mobile table tr td {
+  text-align: left !important;
+}
+
+.table-container-mobile table tr td:first-child {
+  width: 1% !important;
 }
 
 table {
@@ -97,4 +126,31 @@ tbody td:last-child {
 
 table button {
   padding: 6px 10px;
+}
+
+
+@media (min-width: 1100px) {
+  .table-container {
+    display: block;
+  }
+
+  .table-container-mobile {
+    display: none;
+  }
+}
+
+@media (max-width: 1099px) {
+  .table-container {
+    display: none;
+  }
+
+  .table-container-mobile {
+    display: flex;
+  }
+}
+
+@media (max-width: 799px) {
+  .table-container-mobile tbody td {
+    padding: 8px 16px;
+  }
 }
