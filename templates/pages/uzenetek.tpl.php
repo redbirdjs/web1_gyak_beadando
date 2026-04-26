@@ -14,7 +14,7 @@
 
     <?php foreach ($uzenetek as $uzenet): ?>
         <div class="message">
-            <p><?= $uzenet['uzenet'] ?></p>
+            <p><?= htmlspecialchars($uzenet['uzenet']) ?></p>
             <p><?= $uzenet['kuldo'] ?> <span>•</span> <?= $uzenet['datum'] ?></p>
         </div>
     <?php endforeach; ?>

@@ -3,7 +3,7 @@
 <h3>Üzenet adatai:</h3>
 <div class="elrendezes">
     <div class="message">
-        <p><?= $_POST['uzenet'] ?></p>
+        <p><?= htmlspecialchars($_POST['uzenet']) ?></p>
         <p class="adatok"><?= $nev ?> <span>•</span> <?= $ido ?></p>
     </div>
     <?php if (isset($_SESSION['login'])): ?>
