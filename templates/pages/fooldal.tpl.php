@@ -69,9 +69,9 @@
   </div>
 </main>
 
-<script src="https://cdn.plyr.io/3.8.4/plyr.js"></script>
 <link rel="stylesheet" href="https://cdn.plyr.io/3.8.4/plyr.css" />
+<script src="https://cdn.plyr.io/3.8.4/plyr.js"></script>
 <script>
-  const vmplayer = new Plyr('#vm-player');
-  const ytplayer = new Plyr('#yt-player');
+  const vmplayer = new Plyr('#vm-player', { invertTime: false, settings: [] });
+  const ytplayer = new Plyr('#yt-player', { invertTime: false, settings: [] });
 </script>
