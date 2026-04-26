@@ -1,3 +1,7 @@
+h2 {
+    margin-bottom: 20px;
+}
+
 .btn {
     display: block;
     font-size: 14px;
@@ -17,26 +21,41 @@ form {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    margin: 0 auto;
+    max-width: 500px;
 }
 
 textarea {
     outline: none;
-    padding: 5px;
+    padding: 10px;
     border: none;
     border-radius: 6px;
     max-width: 600px;
     min-height: 100px;
     resize: vertical;
+    background: #3f3f3f;
+    color: #e0e0e0;
+    font-size: 15px;
 }
 
 .kotelezo {
     outline: 1px solid var(--danger-color);
+    animation: kotelezo_legzes 2s infinite ease-in-out;
 }
 .hidden {
     display: none;
 }
 .hiba-uzenet {
     color: var(--danger-color);
+}
+
+@keyframes kotelezo_legzes {
+    0% {
+        box-shadow: 0 0 0 0 rgba(231, 76, 60, 0.7);
+    }
+    50% {
+        box-shadow: 0 0 0 10px rgba(231, 76, 60, 0);
+    }
 }
 
 .disabled {
