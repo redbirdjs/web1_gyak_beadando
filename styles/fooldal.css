@@ -4,6 +4,7 @@ main .title {
   justify-content: center;
   gap: 32px;
   margin: 64px 0 96px 0;
+  text-align: center;
 }
 
 main .title img {
@@ -51,4 +52,36 @@ main .content .map {
   width: 50%;
   aspect-ratio: 16/9;
   border-radius: 12px;
+}
+
+@media (max-width: 799px) {
+  main .content {
+    flex-direction: column !important;
+  }
+
+  main .content .text-content, main .content .iframe, main .content .map {
+    width: 100%;
+  }
+
+  main .title {
+    gap: 20px;
+  }
+
+  main .title img {
+    height: 80px;
+  }
+
+  main .title h2 {
+    font-size: 64px;
+  }
+}
+
+@media (max-width: 599px) {
+  main .title {
+    flex-direction: column;
+  }
+
+  main .title h2 {
+    font-size: 44px;
+  }
 }
