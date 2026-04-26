@@ -45,10 +45,21 @@
 
   <div class="content">
     <div class="text-content">
-      <h3>Térkép</h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In perferendis ullam mollitia facilis accusantium sequi nobis aliquam eveniet voluptates. Excepturi quae accusantium esse, sed ea ex voluptas eum praesentium, culpa sit modi? Non earum temporibus illo minima provident quia dicta.</p>
+      <h3>Cég elhelyezkedése</h3>
+
+      <p>A cég telephelye a térképen látható helyszínen található, személyes látogatást itt lehet megejteni.</p>
+      
+      <a href="https://www.google.com/maps?cid=4685242891940547924&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYASAA&hl=hu&gl=HU&source=embed" target="_blank"><button>Térkép megtekintése a Google Maps-en</button></a>
+
+      <p>Megjegyzést az oldalhoz vagy tartalomhoz a Kapcsolat oldalon tud írni, ehhez nem szükséges személyes látogatás.</p>
+      <p>Amennyiben nevet is szeretne csatolni az üzenethez, kérjük jelentkezzen be az oldalra. Ha még nem rendelkezik felhasználóval, a Belépés oldalon regisztrálni is tud.</p>
+
+      <div>
+        <a href="/kapcsolat"><button>Kapcsolat</button></a>
+        <a href="/belepes"><button>Bejelentkezés és regisztráció</button></a>
+      </div>
     </div>
-    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5172.410137026133!2d19.29558375992861!3d46.6269881203757!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4743b2ff70a326d1%3A0x41055396348a4d54!2sTesco!5e0!3m2!1shu!2shu!4v1777201974441!5m2!1shu!2shu" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5172.410137026133!2d19.29558375992861!3d46.6269881203757!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4743b2ff70a326d1%3A0x41055396348a4d54!2sTesco!5e0!3m2!1shu!2shu!4v1777201974441!5m2!1shu!2shu" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   </div>
 </main>
 
