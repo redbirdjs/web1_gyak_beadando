@@ -18,8 +18,18 @@
 
   <div class="content frame-left">
     <div class="text-content">
-      <h3>Videó szolgáltatótól</h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In perferendis ullam mollitia facilis accusantium sequi nobis aliquam eveniet voluptates. Excepturi quae accusantium esse, sed ea ex voluptas eum praesentium, culpa sit modi? Non earum temporibus illo minima provident quia dicta.</p>
+      <h3>Visual Studio Code</h3>
+
+      <p><b>Mi az a Visual Studio Code?</b></p>
+      <p>A Visual Studio Code egy ingyenes, modern forráskód-szerkesztő, amelyet a Microsoft fejlesztett. Többféle programozási nyelvet támogat, és bővítményekkel egyszerűen testre szabható.</p>
+      
+      <p><b>Miért érdemes telepíteni?</b></p>
+      <p>A Visual Studio Code gyors és könnyen kezelhető, így ideális választás kezdők számára is, ugyanakkor haladó fejlesztők igényeit is kielégíti. Beépített hibakeresési eszközöket kínál, és a rengeteg elérhető bővítménynek köszönhetően szinte bármilyen fejlesztési feladathoz igazítható.</p>
+
+      <div>
+        <a href="https://code.visualstudio.com/" target="_blank"><button>Visual Studio Code</button></a>
+        <a href="https://www.youtube.com/watch?v=cu_ykIfBprI" target="_blank"><button>Videó megtekintése a YouTube-on</button></a>
+      </div>
     </div>
     <div class="iframe">
       <div id="yt-player" class="plyr__video-embed">
