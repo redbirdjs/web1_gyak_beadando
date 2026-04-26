@@ -1,0 +1,52 @@
+hr {
+    margin: 20px 0;
+}
+
+h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.elrendezes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.message {
+    font-size: 17px;
+    width: calc(100% - 24px);
+    padding: 20px;
+    border-radius: 8px;
+    background: #3f3f3f;
+    margin-bottom: 10px;
+}
+
+.adatok {
+    display: flex;
+    gap: 10px;
+    justify-content: end;
+}
+
+span {
+    opacity: 0.5;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    display: block;
+    font-size: 14px;
+    letter-spacing: 1px;
+    width: max-content;
+    padding: 8px 12px;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    color: #fff;
+    background: var(--primary-color);
+    cursor: pointer;
+    transition: 0.25s background;
+}
