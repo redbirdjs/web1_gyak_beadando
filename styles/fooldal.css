@@ -1,0 +1,54 @@
+main .title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  margin: 64px 0 96px 0;
+}
+
+main .title img {
+  height: 120px;
+}
+
+main .title h2 {
+  font-size: 92px;
+}
+
+main .content {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 48px;
+  padding: 16px;
+  box-shadow: 0 0 4px #0004;
+  border-radius: 16px;
+  background: #3f3f3f;
+}
+
+main .content.frame-left {
+  flex-direction: row-reverse;
+}
+
+main .content .text-content {
+  width: 50%;
+}
+
+main .text-content h3 {
+  font-size: 26px;
+  margin-bottom: 8px;
+}
+
+main .text-content p {
+  font-size: 17px;
+}
+
+main .content .iframe {
+  width: 50%;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+main .content .map {
+  width: 50%;
+  aspect-ratio: 16/9;
+  border-radius: 12px;
+}
