@@ -21,10 +21,10 @@ if (file_exists('./logicals/'.$keres['fajl'].'.php')) {
 </head>
 <body>
 	<header>
-		<div class="title">
+		<a href="/" class="title">
 			<img src="./images/<?=$fejlec['kepforras']?>" alt="<?=$fejlec['kepalt']?>">
 			<h1><?= $fejlec['cim'] ?></h1>
-		</div>
+		</a>
 
 		<nav class="nav">
 			<?php foreach ($oldalak as $url => $oldal) { ?>

@@ -38,6 +38,8 @@ header .title {
   display: flex;
   align-items: center;
   gap: 16px;
+  color: #fff;
+  text-decoration: none;
 }
 
 header .title h1 {
