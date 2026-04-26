@@ -12,6 +12,8 @@ if (file_exists('./logicals/'.$keres['fajl'].'.php')) {
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title><?= $ablakcim['cim'] . ( (isset($ablakcim['mottó'])) ? ('|' . $ablakcim['mottó']) : '' ) ?></title>
 	<link rel="stylesheet" href="./styles/stilus.css" type="text/css">
+	<link rel="icon" href="./images/logo.png" type="image/x-icon">
+
 	<?php if (file_exists('./styles/'.$keres['fajl'].'.css')) { ?>
 		<link rel="stylesheet" href="./styles/<?= $keres['fajl']?>.css" type="text/css">
 	<?php } ?>
