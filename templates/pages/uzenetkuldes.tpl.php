@@ -6,9 +6,10 @@
         <p><?= htmlspecialchars($_POST['uzenet']) ?></p>
         <p class="adatok"><?= $nev ?> <span>•</span> <?= $ido ?></p>
     </div>
-    <?php if (isset($_SESSION['login'])): ?>
-        <a href="/uzenetek"><button class="btn">Ugrás az üzenetekre</button></a>
-    <?php else: ?>
-        <a href="/"><button class="btn">Vissza a főoldalra</button></a>
-    <?php endif; ?>
+    <div class="buttons">
+        <?php if (isset($_SESSION['login'])): ?>
+            <a href="/uzenetek"><button class="btn">Ugrás az üzenetekre</button></a>
+        <?php endif; ?>
+            <a href="/"><button class="btn">Vissza a főoldalra</button></a>
+    </div>
 </div>
