@@ -16,6 +16,9 @@ $files = array_diff(scandir('uploads/'), array('.', '..'));
     <?php endif; ?>
     <hr>
     <div class="images">
+        <?php if (count($files) === 0): ?>
+            <p class="nincskep">Nincsenek még feltöltött képek!</p>
+        <?php endif; ?>
         <?php foreach ($files as $file): ?>
             <div class="image">
                 <img src="/uploads/<?= $file ?>" alt="<?= $file ?>" />
