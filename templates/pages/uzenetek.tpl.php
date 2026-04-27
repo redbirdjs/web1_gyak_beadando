@@ -11,7 +11,11 @@
 ?>
 <main>
     <h2>Üzenetek</h2>
+    <hr>
 
+    <?php if (count($uzenetek) === 0): ?>
+        <p class="no_message">Nincsenek még üzenetek!</p>
+    <?php endif; ?>
     <?php foreach ($uzenetek as $uzenet): ?>
         <div class="message">
             <p><?= htmlspecialchars($uzenet['uzenet']) ?></p>
