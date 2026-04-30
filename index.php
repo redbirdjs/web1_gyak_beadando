@@ -1,6 +1,6 @@
 <?php
 	include('./includes/config.inc.php');
-	$oldal = explode("&", $_SERVER['QUERY_STRING'])[0];
+    $oldal = substr(parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH), 1);
 	if ($oldal!="") {
 		if (isset($oldalak[$oldal]) && file_exists("./templates/pages/{$oldalak[$oldal]['fajl']}.tpl.php")) {
 			$keres = $oldalak[$oldal];
