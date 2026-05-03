@@ -12,7 +12,9 @@
       <p>Az oldalon szoftverekhez kapcsolódó képek is megjelennek, valamint bejelentkezés után új tartalmak feltöltésére is van lehetőség. Emellett egy üzenetküldési funkció is elérhető, amelyen keresztül megjegyzések küldhetők az oldal tulajdonosának.</p>
       <p>Az összes funkció elérése érdekében érdemes bejelentkezni az oldalra. Amennyiben még nincs felhasználója, regisztrálhat a Belépés oldalon.</p>
       
-      <a href="/belepes"><button>Bejelentkezés és regisztráció</button></a>
+      <?php if (!isset($_SESSION['login'])): ?>
+        <a href="/belepes"><button>Bejelentkezés és regisztráció</button></a>
+      <?php endif; ?>
     </div>
     <div class="iframe">
       <video id="vm-player" playsinline controls data-poster="/path/to/poster.jpg">
@@ -62,7 +64,9 @@
 
       <div class="content-buttons">
         <a href="/kapcsolat"><button>Kapcsolat</button></a>
-        <a href="/belepes"><button>Bejelentkezés és regisztráció</button></a>
+        <?php if (!isset($_SESSION['login'])): ?>
+          <a href="/belepes"><button>Bejelentkezés és regisztráció</button></a>
+        <?php endif; ?>
       </div>
     </div>
     <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5172.410137026133!2d19.29558375992861!3d46.6269881203757!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4743b2ff70a326d1%3A0x41055396348a4d54!2sTesco!5e0!3m2!1shu!2shu!4v1777201974441!5m2!1shu!2shu" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
